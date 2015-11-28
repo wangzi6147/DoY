@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DoY</string>
+    <!-- base activity -->
+    <string name="activity_new">新建</string>
+</resources>
