@@ -6,4 +6,5 @@
     <!-- base activity -->
     <color name="main_orange">#FFCC00</color>
     <color name="white">#ffffff</color>
+    <color name="hint_grey">#a7adb3</color>
 </resources>

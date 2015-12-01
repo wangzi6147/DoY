@@ -9,4 +9,5 @@
     <dimen name="activity_text_size_middle">14sp</dimen>
     <dimen name="activity_text_size_large">16sp</dimen>
     <dimen name="activity_row_horizontal_padding_middle">8dp</dimen>
+    <dimen name="activity_row_vertical_padding_middle">8dp</dimen>
 </resources>

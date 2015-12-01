@@ -38,9 +38,9 @@ public abstract class BaseActivity extends Activity implements TopBar.OnTopBarCl
         initViews();
     }
 
-    protected abstract void initViews();
-
     protected abstract void findViews();
+
+    protected abstract void initViews();
 
     protected TopBar getTopBar() {
         return mTopBar;

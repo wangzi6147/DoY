@@ -3,4 +3,9 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <com.namitor.wangzi6147.doy.view.widget.xlist.XListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/xlv_activity_home"/>
+
 </LinearLayout>
