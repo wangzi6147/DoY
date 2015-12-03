@@ -6,6 +6,7 @@ import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
 import com.namitor.wangzi6147.doy.R;
+import com.namitor.wangzi6147.doy.view.adapter.HomeXListAdapter;
 import com.namitor.wangzi6147.doy.view.widget.xlist.XListView;
 
 /**
@@ -14,6 +15,7 @@ import com.namitor.wangzi6147.doy.view.widget.xlist.XListView;
 public class HomeAcitivity extends BaseActivity implements XListView.IXListViewListener{
 
     private XListView mXListView;
+    private HomeXListAdapter mXListAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +30,11 @@ public class HomeAcitivity extends BaseActivity implements XListView.IXListViewL
 
     @Override
     protected void initViews() {
-
+        mXListAdapter = new HomeXListAdapter(this);
+        mXListView.setAdapter(mXListAdapter);
+        mXListView.setPullLoadEnable(true);
+        mXListView.setPullRefreshEnable(true);
+        mXListView.setXListViewListener(this);
     }
 
 
@@ -39,13 +45,21 @@ public class HomeAcitivity extends BaseActivity implements XListView.IXListViewL
         startActivity(intent);
     }
 
+    private void onLoad(){
+        mXListView.stopLoadMore();
+        mXListView.stopRefresh();
+        mXListView.setRefreshTime("刚刚");
+    }
+
     @Override
     public void onRefresh() {
-
+        mXListAdapter.refresh();
+        onLoad();
     }
 
     @Override
     public void onLoadMore() {
-
+        mXListAdapter.loadMore();
+        onLoad();
     }
 }

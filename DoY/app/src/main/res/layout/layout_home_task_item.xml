@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_row_horizontal_padding_middle">
+
+    <ImageView
+        android:layout_width="@dimen/activity_icon_size_middle"
+        android:layout_height="@dimen/activity_icon_size_middle"
+        android:id="@+id/iv_home_task_item_left"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_row_height_middle"
+        android:layout_marginLeft="@dimen/activity_row_horizontal_padding_middle"
+        android:id="@+id/tv_home_task_item_center"/>
+
+    <ImageView
+        android:layout_width="@dimen/activity_icon_size_middle"
+        android:layout_height="@dimen/activity_icon_size_middle"
+        android:id="@+id/iv_home_task_item_right"
+        android:paddingLeft="@dimen/activity_row_horizontal_padding_middle"/>
+
+</LinearLayout>
