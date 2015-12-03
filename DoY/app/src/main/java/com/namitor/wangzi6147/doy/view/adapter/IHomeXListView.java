@@ -1,6 +1,6 @@
 package com.namitor.wangzi6147.doy.view.adapter;
 
-import com.namitor.wangzi6147.doy.bean.TaskBean;
+import com.namitor.wangzi6147.doy.model.bean.TaskBean;
 
 import java.util.ArrayList;
 

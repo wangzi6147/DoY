@@ -8,7 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.namitor.wangzi6147.doy.R;
-import com.namitor.wangzi6147.doy.bean.TaskBean;
+import com.namitor.wangzi6147.doy.model.bean.TaskBean;
 import com.namitor.wangzi6147.doy.presenter.HomeXListPresenter;
 import com.namitor.wangzi6147.doy.presenter.IHomeXListPresenter;
 

@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 import com.alibaba.fastjson.JSON;
-import com.namitor.wangzi6147.doy.bean.TaskBean;
+import com.namitor.wangzi6147.doy.model.bean.TaskBean;
 
 import java.util.ArrayList;
 

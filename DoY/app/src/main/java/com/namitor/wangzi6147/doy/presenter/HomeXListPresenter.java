@@ -2,7 +2,7 @@ package com.namitor.wangzi6147.doy.presenter;
 
 import android.content.Context;
 
-import com.namitor.wangzi6147.doy.bean.TaskBean;
+import com.namitor.wangzi6147.doy.model.bean.TaskBean;
 import com.namitor.wangzi6147.doy.model.ITaskModel;
 import com.namitor.wangzi6147.doy.model.TaskModel;
 import com.namitor.wangzi6147.doy.view.adapter.IHomeXListView;

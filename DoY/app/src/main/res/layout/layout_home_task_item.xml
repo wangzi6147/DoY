@@ -13,6 +13,8 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/activity_row_height_middle"
         android:layout_marginLeft="@dimen/activity_row_horizontal_padding_middle"
+        android:textSize="@dimen/activity_text_size_middle"
+        android:gravity="center_vertical"
         android:id="@+id/tv_home_task_item_center"/>
 
     <ImageView
