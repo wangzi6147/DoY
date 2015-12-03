@@ -1,10 +1,11 @@
-package com.namitor.wangzi6147.doy.presenter;
+package com.namitor.wangzi6147.doy.presenter.impl;
 
 import android.content.Context;
 
 import com.namitor.wangzi6147.doy.model.bean.TaskBean;
 import com.namitor.wangzi6147.doy.model.ITaskModel;
-import com.namitor.wangzi6147.doy.model.TaskModel;
+import com.namitor.wangzi6147.doy.model.impl.TaskModel;
+import com.namitor.wangzi6147.doy.presenter.IHomeXListPresenter;
 import com.namitor.wangzi6147.doy.view.adapter.IHomeXListView;
 
 import java.util.ArrayList;

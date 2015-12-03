@@ -8,7 +8,7 @@ import android.widget.Toast;
 
 import com.namitor.wangzi6147.doy.R;
 import com.namitor.wangzi6147.doy.presenter.INewTaskPresenter;
-import com.namitor.wangzi6147.doy.presenter.NewTaskPresenter;
+import com.namitor.wangzi6147.doy.presenter.impl.NewTaskPresenter;
 import com.namitor.wangzi6147.doy.utils.StringUtil;
 
 /**
