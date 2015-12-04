@@ -1,6 +1,6 @@
 package com.namitor.wangzi6147.doy.model;
 
-import com.namitor.wangzi6147.doy.model.bean.UserBean;
+import com.namitor.wangzi6147.doy.bean.UserBean;
 
 /**
  * Created by wangzi6147 on 2015/12/4.

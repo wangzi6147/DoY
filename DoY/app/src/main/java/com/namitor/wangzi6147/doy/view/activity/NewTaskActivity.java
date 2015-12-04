@@ -7,9 +7,10 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.namitor.wangzi6147.doy.R;
-import com.namitor.wangzi6147.doy.presenter.INewTaskPresenter;
-import com.namitor.wangzi6147.doy.presenter.impl.NewTaskPresenter;
+import com.namitor.wangzi6147.doy.presenter.ITaskPresenter;
+import com.namitor.wangzi6147.doy.presenter.impl.TaskPresenter;
 import com.namitor.wangzi6147.doy.utils.StringUtil;
+import com.namitor.wangzi6147.doy.view.INewTaskView;
 
 /**
  * Created by wangzi6147 on 2015/11/29.
@@ -19,14 +20,14 @@ public class NewTaskActivity extends BaseActivity implements View.OnClickListene
     private View mLeftView;
     private Button mBtnSubmit;
     private EditText mTitleEdit, mContentEdit, mValueEdit;
-    private INewTaskPresenter newTaskPresenter;
+    private ITaskPresenter newTaskPresenter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setActivityContentView(R.layout.activity_new_task);
         getTopBar().hide();
-        newTaskPresenter = new NewTaskPresenter(this, this);
+        newTaskPresenter = new TaskPresenter(this, this);
     }
 
     @Override
@@ -53,7 +54,7 @@ public class NewTaskActivity extends BaseActivity implements View.OnClickListene
             case R.id.bt_activity_new_submit:
                 String s = mValueEdit.getText().toString();
                 if(StringUtil.isInteger(s)){
-                    newTaskPresenter.submit(mTitleEdit.getText().toString(), mContentEdit.getText().toString(), Integer.parseInt(s));
+                    newTaskPresenter.newTask(mTitleEdit.getText().toString(), mContentEdit.getText().toString(), Integer.parseInt(s));
                 }else{
                     Toast.makeText(this, "B值必须为数字", Toast.LENGTH_LONG).show();
                 }

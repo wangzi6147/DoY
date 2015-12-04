@@ -1,6 +1,6 @@
 package com.namitor.wangzi6147.doy.model;
 
-import com.namitor.wangzi6147.doy.model.bean.WishBean;
+import com.namitor.wangzi6147.doy.bean.WishBean;
 
 import java.util.ArrayList;
 

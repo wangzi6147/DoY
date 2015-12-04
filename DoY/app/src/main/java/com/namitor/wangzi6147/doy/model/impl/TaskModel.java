@@ -5,7 +5,7 @@ import android.content.SharedPreferences;
 
 import com.alibaba.fastjson.JSON;
 import com.namitor.wangzi6147.doy.constants.Constants;
-import com.namitor.wangzi6147.doy.model.bean.TaskBean;
+import com.namitor.wangzi6147.doy.bean.TaskBean;
 import com.namitor.wangzi6147.doy.model.ITaskModel;
 
 import java.util.ArrayList;

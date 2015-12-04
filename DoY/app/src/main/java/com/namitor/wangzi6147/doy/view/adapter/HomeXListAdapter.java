@@ -8,25 +8,26 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.namitor.wangzi6147.doy.R;
-import com.namitor.wangzi6147.doy.model.bean.TaskBean;
-import com.namitor.wangzi6147.doy.presenter.impl.HomeXListPresenter;
-import com.namitor.wangzi6147.doy.presenter.IHomeXListPresenter;
+import com.namitor.wangzi6147.doy.bean.TaskBean;
+import com.namitor.wangzi6147.doy.presenter.ITaskPresenter;
+import com.namitor.wangzi6147.doy.presenter.impl.TaskPresenter;
+import com.namitor.wangzi6147.doy.view.ITaskView;
 
 import java.util.ArrayList;
 
 /**
  * Created by wangzi6147 on 2015/12/2.
  */
-public class HomeXListAdapter extends BaseAdapter implements IHomeXListView{
+public class HomeXListAdapter extends BaseAdapter implements ITaskView {
 
     private ArrayList<TaskBean> tasks;
     private Context mContext;
-    private IHomeXListPresenter homeXListPresenter;
+    private ITaskPresenter taskPresenter;
 
     public HomeXListAdapter(Context context){
         this.mContext = context;
-        homeXListPresenter = new HomeXListPresenter(context, this);
-        homeXListPresenter.getData();
+        taskPresenter = new TaskPresenter(context, this);
+        taskPresenter.getData();
     }
 
     @Override
@@ -59,10 +60,10 @@ public class HomeXListAdapter extends BaseAdapter implements IHomeXListView{
     }
 
     public void refresh() {
-        homeXListPresenter.getData();
+        taskPresenter.getData();
     }
 
     public void loadMore() {
-        homeXListPresenter.getData();
+        taskPresenter.getData();
     }
 }

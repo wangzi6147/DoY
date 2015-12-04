@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 import com.namitor.wangzi6147.doy.constants.Constants;
-import com.namitor.wangzi6147.doy.model.bean.UserBean;
+import com.namitor.wangzi6147.doy.bean.UserBean;
 import com.namitor.wangzi6147.doy.model.IUserModel;
 
 /**

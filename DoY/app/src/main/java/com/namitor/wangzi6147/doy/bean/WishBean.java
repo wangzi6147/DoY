@@ -1,21 +1,20 @@
-package com.namitor.wangzi6147.doy.model.bean;
+package com.namitor.wangzi6147.doy.bean;
 
 /**
- * Created by wangzi6147 on 2015/12/2.
+ * Created by wangzi6147 on 2015/12/4.
  */
-public class TaskBean {
-    private String title;
-    private String content;
-    private int value;
+public class WishBean {
+    public WishBean(){}
 
-    public TaskBean(){
-
-    }
-    public TaskBean(String title, String content, int value){
+    public WishBean(String title, String content, int value){
         this.title = title;
         this.content = content;
         this.value = value;
     }
+
+    private String title;
+    private String content;
+    private int value;
 
     public String getTitle() {
         return title;
