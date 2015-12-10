@@ -47,7 +47,9 @@ public class HomeXListAdapter extends BaseAdapter implements ITaskView {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        convertView = LayoutInflater.from(mContext).inflate(R.layout.layout_home_task_item, null);
+        if(convertView==null){
+            convertView = LayoutInflater.from(mContext).inflate(R.layout.layout_home_task_item, null);
+        }
         TextView tvCenter = ViewHolder.get(convertView, R.id.tv_home_task_item_center);
         tvCenter.setText(tasks.get(position).getTitle());
         return convertView;

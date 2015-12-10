@@ -5,8 +5,8 @@ package com.namitor.wangzi6147.doy.bean;
  */
 public class UserBean {
     public UserBean(){
-        userID = "";
-        bCoin = 0;
+        userID = "Anonym";
+        bCoin = 50;
     }
 
     public UserBean(String userID, int bCoin){

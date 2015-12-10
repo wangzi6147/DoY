@@ -12,7 +12,7 @@ import com.namitor.wangzi6147.doy.view.widget.xlist.XListView;
 /**
  * Created by wangzi6147 on 2015/11/28.
  */
-public class HomeAcitivity extends BaseActivity implements XListView.IXListViewListener{
+public class HomeActivity extends BaseActivity implements XListView.IXListViewListener{
 
     private XListView mXListView;
     private HomeXListAdapter mXListAdapter;
@@ -42,6 +42,13 @@ public class HomeAcitivity extends BaseActivity implements XListView.IXListViewL
     public void onRightClick() {
         super.onRightClick();
         Intent intent = new Intent(this, NewTaskActivity.class);
+        startActivity(intent);
+    }
+
+    @Override
+    public void onLeftClick() {
+        super.onLeftClick();
+        Intent intent = new Intent(this, UserActivity.class);
         startActivity(intent);
     }
 

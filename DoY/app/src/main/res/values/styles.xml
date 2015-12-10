@@ -8,13 +8,23 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="WindowAnim" parent="@android:style/Animation.Activity">
-        <item name="android:activityOpenEnterAnimation">@anim/activity_in_from_right</item>
-        <item name="android:activityOpenExitAnimation">@anim/activity_out_to_left</item>
-        <item name="android:activityCloseExitAnimation">@anim/activity_out_to_right</item>
+    <style name="WindowAnimRight" parent="@android:style/Animation.Translucent">
+        <item name="android:windowEnterAnimation">@anim/activity_in_from_right</item>
+        <item name="android:windowExitAnimation">@anim/activity_out_to_right</item>
     </style>
-    <style name="AppTheme.Translucent.NoTitleBar" parent="@android:style/Theme.Translucent.NoTitleBar">
-        <item name="android:windowAnimationStyle">@style/WindowAnim</item>
+    <style name="AppTheme.Translucent.NoTitleBarRight" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/WindowAnimRight</item>
     </style>
+
+
+
+    <style name="WindowAnimLeft" parent="@android:style/Animation.Translucent">
+        <item name="android:windowEnterAnimation">@anim/activity_in_from_left</item>
+        <item name="android:windowExitAnimation">@anim/activity_out_to_left</item>
+    </style>
+    <style name="AppTheme.Translucent.NoTitleBarLeft" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/WindowAnimLeft</item>
+    </style>
+
 
 </resources>

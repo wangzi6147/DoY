@@ -46,6 +46,12 @@ public class NewTaskActivity extends BaseActivity implements View.OnClickListene
     }
 
     @Override
+    public void finish() {
+        super.finish();
+        overridePendingTransition(R.anim.activity_in_from_right, R.anim.activity_out_to_right);
+    }
+
+    @Override
     public void onClick(View v) {
         switch (v.getId()){
             case R.id.v_activity_new_left_blank:
